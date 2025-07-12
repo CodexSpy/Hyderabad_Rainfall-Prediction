@@ -1,0 +1,19 @@
+[
+  {
+    "term": "Anomaly",
+    "text": "A rainfall anomaly measures how much the actual rainfall deviates from the long-term mean. It helps detect unusually wet or dry years."
+  },
+  {
+    "term": "ARIMA",
+    "text": "ARIMA stands for Auto-Regressive Integrated Moving Average. It models time series data by combining autoregression, differencing, and moving average parts."
+  },
+  {
+    "term": "SARIMA",
+    "text": "SARIMA adds a seasonal component to ARIMA, making it better for patterns like monsoon rainfall that repeat each year."
+  },
+  {
+    "term": "OLS Trendline",
+    "text": "Ordinary Least Squares is a method to find the line that best fits the data points by minimizing the sum of squared errors."
+  }
+]
+
