@@ -10,3 +10,6 @@ PyPDF2
 pymupdf
 faiss-cpu
 statsmodels
+plotly
+matplotlib
+seaborn
