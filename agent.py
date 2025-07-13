@@ -1,5 +1,5 @@
 from langchain.prompts import PromptTemplate
-from langchain_cohere import ChatCohere
+from langchain_community.chat_models import ChatCohere
 from dotenv import load_dotenv
 import streamlit as st
 from langchain_community.embeddings import CohereEmbeddings
