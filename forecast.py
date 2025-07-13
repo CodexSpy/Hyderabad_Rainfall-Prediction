@@ -80,7 +80,7 @@ def sarima_forecast(df, monthly_cols, user_year):
     yaxis_title='Rainfall(mm)',
     width=1000,
     height=600,
-    title_x=0.5
+    title_x=0.4
  )
 
  return fig
