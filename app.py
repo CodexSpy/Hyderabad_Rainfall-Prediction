@@ -81,7 +81,7 @@ if 'forecast_fig' in st.session_state:
 
     if st.button("🔍 Explain It"):
      with st.spinner("Finding best context..."):
-        retrieved_docs = next(doc for doc in docs if doc.metdata["term"]==selected_term)
+        retrieved_docs = next(doc for doc in docs if doc.metadata["term"]==selected_term)
         context = retrieved_docs.page_content
 
         result = run_chain(context)
