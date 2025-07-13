@@ -59,15 +59,15 @@ def sarima_forecast(df, monthly_cols, user_year):
     name='Forecast',
     text=[f"{y:.1f} mm" for y in forecast_mean],
     textposition='top center',
-    line=dict(color='royalblue')
+    line=dict(color='cyan')
  ))
 
  fig.add_trace(go.Scatter(
     x=future_dates.tolist() + future_dates[::-1].tolist(),
     y=forecast_ci.iloc[:, 0].tolist() + forecast_ci.iloc[:, 1][::-1].tolist(),
     fill='toself',
-    fillcolor='rgba(0, 0, 255, 0.1)',
-    line=dict(color='rgba(255,255,255,0)'),
+    fillcolor='rgba(150, 255, 255, 0.2)',
+    line=dict(color='rgba(200, 255, 255, 0.5)'),
     hoverinfo="skip",
     showlegend=True,
     name='95% CI',
