@@ -103,7 +103,7 @@ Hi, I'm Moin Khan, a passionate engineer who loves to extract valuable insights 
     '''
     ```
     
-    ![Sarima.png](Sarima.png)
+    ![Sarima.png](images/Sarima.png)
     
 - Langchain+Cohere
     
@@ -160,7 +160,7 @@ Hi, I'm Moin Khan, a passionate engineer who loves to extract valuable insights 
 
 ### 8. Understanding the Predictions
 
-![Unpredicted.png](Unpredicted.png)
+![Unpredicted.png](images/Unpredicted.png)
 
 **What does it show?**
 
@@ -175,7 +175,7 @@ This line graph displays monthly rainfall variability measured by standard devia
 
 During the June-October period, rainfall patterns are highly variable — some years bringing excessive precipitation while others experience drought conditions.
 
-![Annual_Avg.png](Annual_Avg.png)
+![Annual_Avg.png](images/Annual_Avg.png)
 
 **What does it show?**
 
@@ -193,7 +193,7 @@ This scatter plot displays the annual rainfall totals, measured in millimeters (
 
 Despite yearly fluctuations in rainfall, we're experiencing slightly more precipitation now than we did a few decades ago.
 
-![Extreme.png](Extreme.png)
+![Extreme.png](images/Extreme.png)
 
 **What does it show?**
 
@@ -211,7 +211,7 @@ This scatter plot displays the frequency of extreme rainfall months each year.
 
 Months with very heavy rainfall do occur occasionally, but their frequency hasn't increased over the years.
 
-![Onset.png](Onset.png)
+![Onset.png](images/Onset.png)
 
 **What does it show?**
 
@@ -229,7 +229,7 @@ This scatter plot displays when the monsoon starts each year, measured by month.
 
 The monsoon season generally starts in June, but data indicates it might be arriving a bit earlier in recent years.
 
-![Screenshot from 2025-07-13 15-40-39.png](Screenshot_from_2025-07-13_15-40-39.png)
+![Screenshot from 2025-07-13 15-40-39.png](images/Anomalypng)
 
 **What does it show?**
 
