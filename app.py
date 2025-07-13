@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import forecast
-from agent import db, terms, chain
+from agent import db, terms, run_chain
 import visuals
 
 st.set_page_config(page_title="Hyderabad Rainfall Forecast", layout="wide")
@@ -84,10 +84,10 @@ if 'forecast_fig' in st.session_state:
         retrieved_docs = db.similarity_search(selected_term, k=1)
         context = retrieved_docs[0].page_content
 
-        result = chain.invoke({"context": context})
+        result = run_chain(context)
 
         st.success("✅ Explanation generated:")
-        st.markdown(result.content, unsafe_allow_html=True)
+        st.markdown(result, unsafe_allow_html=True)
 
 if st.checkbox('Click to get More Analysis'):
     try:
