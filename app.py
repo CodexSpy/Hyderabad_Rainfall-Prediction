@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import forecast
-from agent import db, terms, run_chain
+from agent import db, terms, run_chain, docs
 import visuals
 
 st.set_page_config(page_title="Hyderabad Rainfall Forecast", layout="wide")
@@ -81,8 +81,8 @@ if 'forecast_fig' in st.session_state:
 
     if st.button("🔍 Explain It"):
      with st.spinner("Finding best context..."):
-        retrieved_docs = db.similarity_search(selected_term, k=1)
-        context = retrieved_docs[0].page_content
+        retrieved_docs = next(doc for doc in docs if doc.metdata["term"]==selected_term)
+        context = retrieved_docs.page_content
 
         result = run_chain(context)
 
