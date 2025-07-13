@@ -3,6 +3,7 @@ import pandas as pd
 import forecast
 from agent import db, terms, run_chain, docs
 import visuals
+import time
 
 st.set_page_config(page_title="Hyderabad Rainfall Forecast", layout="wide")
 
@@ -65,6 +66,8 @@ user_year = st.number_input(
 
 
 if st.button("Get Forecast"):
+  with st.spinner('Getting Forecastt..'):
+    time.sleep(5)
     try:
         fig = forecast.sarima_forecast(df, monthly_cols, user_year)
         st.session_state['forecast_fig'] = fig
