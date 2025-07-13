@@ -1,9 +1,9 @@
 streamlit
 pandas
 scikit-learn
-langchain
-langchain-cohere
-cohere
+langchain==0.1.16
+langchain-cohere==0.0.5
+cohere==4.50.0
 python-dotenv
 statsmodels
 plotly
