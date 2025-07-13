@@ -14,7 +14,7 @@ import cohere
 load_dotenv()
 cohere_key = st.secrets.get("CO_API_KEY") or os.getenv("CO_API_KEY")
 
-# Use official Cohere Python SDK for chat
+
 co = cohere.Client(cohere_key)
 
 # Load docs
@@ -34,17 +34,15 @@ docs = [
 db = FAISS.from_documents(docs, embeddings)
 terms = [item["term"] for item in documents]
 
-# The template is still useful
 template = """
 You are explaining a Data Science concept to a layperson.
 Here is the context:
 {context}
 
 Explain this in simple terms with an example if possible.
+use bullets and some emojis to make learning captivated but don't overuse that.
 """
-prompt = PromptTemplate.from_template(template)
 
-# The wrapper for your chain → use official Cohere SDK directly
 def run_chain(context: str):
     user_prompt = prompt.format(context=context)
     response = co.chat(
