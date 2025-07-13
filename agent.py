@@ -43,6 +43,8 @@ Explain this in simple terms with an example if possible.
 use bullets and some emojis to make learning captivated but don't overuse that.
 """
 
+prompt = PromptTemplate.from_template(template)
+
 def run_chain(context: str):
     user_prompt = prompt.format(context=context)
     response = co.chat(
