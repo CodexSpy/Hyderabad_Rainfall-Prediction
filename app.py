@@ -87,7 +87,8 @@ if 'forecast_fig' in st.session_state:
         result = run_chain(context)
 
         st.success("✅ Explanation generated:")
-        st.markdown(result, unsafe_allow_html=True)
+        with st.expander(selected_term):
+            st.markdown(result, unsafe_allow_html=True)
 
 if st.checkbox('Click to get More Analysis'):
     try:
