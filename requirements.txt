@@ -8,3 +8,4 @@ statsmodels
 plotly
 matplotlib
 seaborn
+faiss-cpu==1.7.4
