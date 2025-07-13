@@ -271,5 +271,5 @@ Simply put, while rainfall patterns remain irregular, these subtle changes could
 > 
 
 - Feel Free to Reach me out:
-    - [LinkedIn](https://www.notion.so/Moin-khan-939b8f0838508357b9c7816ea5ff7b60?pvs=21)
+    - [LinkedIn](https://www.linkedin.com/in/moin-khan-0335b4245)
     - [Email](mailto:kmoin9985@gmail.com)
