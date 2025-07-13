@@ -14,6 +14,10 @@
   {
     "term": "OLS Trendline",
     "text": "Ordinary Least Squares is a method to find the line that best fits the data points by minimizing the sum of squared errors."
+  },
+  {
+    "term":"CI",
+    "text": "CI stands for Confidence Interval — a range that likely contains the true future value. In forecasting, a CI shows the uncertainty around your    prediction (e.g., 95% CI means you’re 95% confident the true value falls in that range).Wider CIs mean more uncertainty; narrow CIs mean more precise forecasts."
   }
 ]
 
