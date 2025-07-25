@@ -50,7 +50,7 @@ def sarima_forecast(df, monthly_cols, user_year):
 
  fig = go.Figure()
 
- print("⚠️ The Predicted Values are based upon previous recorded Normal or Avrage Values and does not count Uncertinity in Rainfall spells")
+ print("⚠️ The Predicted Values are based upon previous recorded Normal or Average Values and does not count Uncertinity in Rainfall spells")
 
  fig.add_trace(go.Scatter(
     x=future_dates,
